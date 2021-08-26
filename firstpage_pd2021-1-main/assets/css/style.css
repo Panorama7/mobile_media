@@ -1,0 +1,263 @@
+:root {
+  --primary-color: #fa4a0c;
+  --second-color: #252b42;
+  --text-color: #737373;
+  --primary-size-font: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: var(--primary-size-font);
+  font-weight: 400;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+.footer-container {
+  max-width: 1210px;
+  margin: 0 auto;
+}
+
+.cont-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.nav-a {
+  text-decoration: none;
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #252b42;
+}
+
+.nav-span {
+  margin-right: 114px;
+}
+
+button {
+  color: white;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 36px;
+  height: 68px;
+  width: 236px;
+  padding: 18px 0px;
+}
+
+.button-style-1 {
+  background: var(--primary-color);
+  border: none;
+  margin-right: 35px;
+}
+
+.button-style-2 {
+  background: none;
+  border: 1px solid white;
+}
+
+.restapp {
+  background-image: url('../img/back1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 80px 0 178px;
+}
+
+.restapp_info {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.1px;
+  color: #f7f7f7;
+}
+
+.restapp_title {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 58px;
+  line-height: 80px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #ffffff;
+  margin: 10px auto;
+  max-width: 800px;
+}
+
+.restapp_about {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 38px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #f7f7f7;
+  margin-bottom: 50px;
+}
+
+.order_title {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 57px;
+  letter-spacing: 0.2px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.order {
+  background-image: url('../img/back2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 147px 0 131px;
+}
+
+.mobile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /*margin-top: 142px;*/
+  margin-top: 102px;
+  margin-bottom: 50px;
+}
+
+.mobile_head {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.1px;
+  color: var(--primary-color);
+}
+
+.mobile_title {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 57px;
+  letter-spacing: 0.2px;
+  color: #252b42;
+  max-width: 561px;
+  margin: 17px 0;
+}
+
+.mobile_text {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 38px;
+  letter-spacing: 0.2px;
+  color: #737373;
+  margin: 27px 0;
+  max-width: 467px;
+}
+
+.mobile_title_head {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 40px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: var(--second-color);
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 700px) {
+  .cont-flex {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  nav {
+    display: flex;
+    flex-direction:column;
+    text-align: center;
+    justify-content: center;
+  }
+  .nav-span {
+    text-align: center;
+    margin: 0;
+
+  }
+  .nav-a {
+    font-size: 30px;
+    text-transform: uppercase;
+    line-height: 40px;
+  }
+  .restapp{
+    background-image: none;
+    color: rgb(8, 8, 8);
+    text-align: center;
+    padding: 0;
+  }
+  .restapp_info{
+    color: rgb(8, 8, 8);
+    text-align: center;
+  }
+  .restapp_title {
+    color: rgb(8, 8, 8);
+    text-align: center;
+  }
+  .restapp_about {
+    color: rgb(8, 8, 8);
+    text-align: center;
+  }
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .button-style-1 {
+    margin: 0;
+  }
+  .button-style-2 {
+    background: var(--primary-color);
+    border: none;
+    margin-top: 20px;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .mobile {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    text-align: center;
+    align-items: center;
+    margin: 0;
+  }
+  .mobile_text {
+    max-width: 100%;
+  }
+  .order {
+    background-color: rgb(113, 89, 201);
+    background-image: none;
+  }
+}
